@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* NetControlKZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* NetControlKZApp.swift */; };
+		A10000000000000000000002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* Models.swift */; };
+		A10000000000000000000003 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* Localization.swift */; };
+		A10000000000000000000004 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* KeychainStore.swift */; };
+		A10000000000000000000005 /* KeeneticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* KeeneticAPI.swift */; };
+		A10000000000000000000006 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* AppModel.swift */; };
+		A10000000000000000000007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* NetControlKZApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetControlKZApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* KeeneticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeneticAPI.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C10000000000000000000001 /* NetControlKZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetControlKZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		D10000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		E10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (E10000000000000000000002 /* NetControlKZ */, E10000000000000000000003 /* Products */);
+			sourceTree = "<group>";
+		};
+		E10000000000000000000002 /* NetControlKZ */ = {
+			isa = PBXGroup;
+			children = (B10000000000000000000001, E10000000000000000000004, E10000000000000000000005, E10000000000000000000006, B10000000000000000000008);
+			path = NetControlKZ;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000004 /* Models */ = {isa = PBXGroup; children = (B10000000000000000000002); path = Models; sourceTree = "<group>"; };
+		E10000000000000000000005 /* Services */ = {isa = PBXGroup; children = (B10000000000000000000003, B10000000000000000000004, B10000000000000000000005, B10000000000000000000006); path = Services; sourceTree = "<group>"; };
+		E10000000000000000000006 /* Views */ = {isa = PBXGroup; children = (B10000000000000000000007); path = Views; sourceTree = "<group>"; };
+		E10000000000000000000003 /* Products */ = {isa = PBXGroup; children = (C10000000000000000000001); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* NetControlKZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10000000000000000000002 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (H10000000000000000000001 /* Sources */, D10000000000000000000001 /* Frameworks */, I10000000000000000000001 /* Resources */);
+			buildRules = ();
+			dependencies = ();
+			name = NetControlKZ;
+			productName = NetControlKZ;
+			productReference = C10000000000000000000001 /* NetControlKZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		J10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; TargetAttributes = {F10000000000000000000001 = {CreatedOnToolsVersion = 16.0; }; }; };
+			buildConfigurationList = G10000000000000000000001 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 14.0";
+			mainGroup = E10000000000000000000001;
+			productRefGroup = E10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F10000000000000000000001 /* NetControlKZ */);
+		};
+/* End PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+		I10000000000000000000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		H10000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006, A10000000000000000000007); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+/* Begin XCBuildConfiguration section */
+		K10000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.9; }; name = Debug; };
+		K10000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.9; }; name = Release; };
+		K10000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = NetControlKZ/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = kz.netcontrol.LANControlKZ; PRODUCT_NAME = NetControlKZ; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		K10000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = NetControlKZ/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = kz.netcontrol.LANControlKZ; PRODUCT_NAME = NetControlKZ; SWIFT_EMIT_LOC_STRINGS = YES; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		G10000000000000000000001 /* Build configuration list for PBXProject */ = {isa = XCConfigurationList; buildConfigurations = (K10000000000000000000001, K10000000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		G10000000000000000000002 /* Build configuration list for PBXNativeTarget */ = {isa = XCConfigurationList; buildConfigurations = (K10000000000000000000003, K10000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = J10000000000000000000001 /* Project object */;
+}

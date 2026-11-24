@@ -1,0 +1,33 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: xcodebuild -version
+      - name: Build unsigned iOS app
+        run: |
+          xcodebuild \
+            -project NetControlKZ.xcodeproj \
+            -scheme NetControlKZ \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+      - name: Package unsigned IPA
+        run: ./scripts/package_ipa.sh build/Build/Products/Release/NetControlKZ.app LANControlKZ-unsigned.ipa
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LANControlKZ-unsigned-IPA
+          path: LANControlKZ-unsigned.ipa
+          if-no-files-found: error
